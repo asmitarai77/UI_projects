@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+/* RESET CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* GENERAL CSS */
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #434040;
+}
+
+.white{
+    color: #ffffff;
+}
+.black{
+    color: #000000;
+}
+
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container1{
+    width: 95%;
+    margin: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+.header .navbar ul{
+    margin: 0;
+    padding: 0px;
+    align-self: center;
+}
+.header li {
+    display: inline-block;
+}
+.bannerbg{
+    position: relative;
+    z-index: -1;
+    margin-top: -90px;
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+.mainslider .item img{
+    height: 100vh;
+    width: auto;
+}
+
+.bannertext{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    right: 0;
+    text-align: center;
+}
+span{
+    font-size: 35px;
+    color: #fff;
+}
+h2{
+    font-size: 25px;
+    font-family: 'poppins', sans-serif;
+    font-weight: lighter;
+    color: #fff;
+}
+.navbar{
+    align-self: center;
+}
+footer{
+    background-color: #c6c6c6;
+}
+.foot{
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
+}
+
+.foot ul {
+    margin: 0;
+    padding: 0px;
+ }
+      
+.foot li {
+    display: inline-block;
+}
+.logo{
+display: block;
+}
+.logo2{
+    display: block;
+
+}    
+li a {
+    padding: 12px 14px;
+    text-decoration: none;
+ }
+
+.heading{
+font-size: 45px;
+text-align: center;
+padding-top: 0px;
+padding-bottom: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.heading1 {
+    font-size: 15px;
+    color: #000000;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px;
+    line-height: 1.39;
+}
+.heading1 h1{
+    margin-bottom:15px;
+}
+
+.items {
+padding: 0px;
+box-shadow: 0px 15px 25px 0px rgba(0,0,0,30%);
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    
+}
+.load{
+    border-radius: 40px;
+    border-width: thin;
+    color:#000000;
+    font-weight: bold;
+    cursor: pointer;  
+    padding: 18px 38px 18px 38px;
+    background-color:#ffffff;
+}
+
+@media (max-width: 992px) {
+
+    .mainslider .item img {
+          height: 60vh;
+        }
+   .heading {
+            font-size: 30px;
+        } 
+    span {
+          font-size: 30px;
+        } 
+    h2{
+        font-size: 25px
+    }
+    .heading1{
+        font-size: 10px;
+    }
+    .container {
+        max-width: 1140px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}/*
+#hamburger-icon{
+    margin: auto 0;
+    display:none;
+    cursor: pointer;
+}
+#hamburger-icon div{
+    width: 35px;
+    height: 3px;
+    background-color:#fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2{
+    opacity: 0;
+}
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top:50px;
+    left:0;
+    height:clac(100vh -50px);
+    width: 100%;
+   
+}*/
+/* Quick css for presentation */
+.navigation{
+    position:relative;
+    height:80px;
+    padding:0 15px;
+    background-color: #00688B;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navigation__logo a{
+    text-decoration:none;
+  }
+  .navigation__logo p{
+    color:#ffffff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .navigation__links{
+    position: absolute;
+    width:300px;
+    height:100vh;
+    left:-1000px;
+    top:0;
+    z-index:2;
+    transition: left 0.3s ease-in;
+    color:#ffffff;
+    list-style: none;
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+  }
+  .navigation__links li{
+    padding: 5px 10px;
+    text-alig:center;
+    border-bottom:1px solid rgba(255,255,255, 0.3);
+  }
+  .navigation__links a{
+    color: #ffffff;
+    text-decoration:none;  
+  }
+  
+  #hamburger{
+    visibility:hidden;
+  }
+  .navigation__button{
+    position:relative;
+    display: inline-block;
+    width: 30px;
+    height:30px;
+    background:transparent;
+    border:1px solid #ffffff;
+    cursor:pointer;
+  }
+  .navigation__button span{
+    position:absolute;
+    left: 5px;
+    display:inline-block;
+    width:20px;
+    height:1px;
+    background-color: #ffffff;
+    transform-origin:center;
+    transition: opacity 0.2s linear, all 0.3s linear;
+  }
+  .navigation__button span:nth-of-type(1){
+    top: 10px;
+  }
+  .navigation__button span:nth-of-type(2){
+    top: 15px;
+  }
+  .navigation__button span:nth-of-type(3){
+    top: 20px;
+  }
+  
+  
+  /* Here comes the magic */
+  
+  #hamburger:checked ~ .navigation__links{
+    /* Or it can be "input[type="checkbox"] ~ .navigation__links" */
+    left:0;
+  }
+  
+  /* Styles for our "close" button */
+  #hamburger:checked ~ .navigation__button span:nth-of-type(1){
+    transform: rotate(45deg);
+    top: 15px;
+  }
+  #hamburger:checked ~ .navigation__button span:nth-of-type(2){
+    opacity:0;
+  }
+  #hamburger:checked ~ .navigation__button span:nth-of-type(3){
+    transform: rotate(-45deg);
+    top: 15px;
+  }
+@media (max-width: 576px) {
+    header{
+        display: none;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .navigation{
+        display: block;
+    }
+}
